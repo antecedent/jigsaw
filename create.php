@@ -1,6 +1,6 @@
 <?php
 
-const FILE = __DIR__ . '/jigsaws.json';
+require __DIR__ . '/config.php';
 
 if (!isset($_POST['name']) || $_POST['name'] === '') {
     header('Location: new.php');

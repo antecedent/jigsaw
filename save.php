@@ -1,6 +1,6 @@
 <?php
 
-const FILE = __DIR__ . '/jigsaws.json';
+require __DIR__ . '/config.php';
 
 $jigsaws = json_decode(file_get_contents(FILE));
 
