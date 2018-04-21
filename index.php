@@ -1,3 +1,4 @@
+<?php require __DIR__ . '/config.php' ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,7 +14,7 @@
             <li>consonant</li>
             <li>letter</li>
             <li>non-letter</li>
-            <?php foreach (json_decode(file_get_contents(__DIR__ . '/jigsaws.json'))->jigsaws as $jigsaw): ?>
+            <?php foreach (json_decode(file_get_contents(FILE))->jigsaws as $jigsaw): ?>
                 <li><a target="_blank" href="edit.php?id=<?= $jigsaw->id ?>"><?= $jigsaw->name ?></a></li>
             <?php endforeach ?>
         </ul>
